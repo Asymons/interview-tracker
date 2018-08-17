@@ -1,0 +1,35 @@
+@import '../../../../../constants/mixins';
+
+.interviewer-list {
+  width: 100%;
+  max-width: 700px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+
+  .no-interviewer-found {
+    text-align: center;
+    @include card-style;
+
+    .no-interviewer-title {
+      font-size: 20px;
+      font-weight: bold;
+      margin: 10px 0;
+    }
+
+    .no-interviewer-message {
+      font-size: 16px;
+      margin: 10px 0;
+    }
+
+  }
+
+}
+
+@media screen and (max-width: 800px) {
+  .interviewer-list {
+    justify-content: center;
+  }
+}

@@ -1,0 +1,41 @@
+.company-header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+
+  .left-elements {
+    margin-right: 40px;
+
+    .company-image {
+      width: 100px;
+      height: 100px;
+    }
+  }
+
+  .right-elements {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .company-name {
+      font-size: 24px;
+      font-weight: bold;
+      margin: 5px 0;
+    }
+
+    .recruiter-name {
+      font-size: 20px;
+      font-weight: lighter;
+    }
+
+    .recruiter-title {
+      font-size: 18px;
+      font-weight: bold;
+    }
+  }
+
+}

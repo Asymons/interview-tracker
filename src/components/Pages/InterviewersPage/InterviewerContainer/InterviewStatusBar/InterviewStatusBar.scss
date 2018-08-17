@@ -1,0 +1,19 @@
+.interview-status-bar {
+  width: 100%;
+  max-width: 700px;
+  min-height: 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 800px) {
+  .interview-status-bar {
+    justify-content: center;
+    align-items: center;
+  }
+}

@@ -1,0 +1,57 @@
+@import '../../../constants/mixins';
+@import '../../../constants/variables';
+
+.login-page {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 100%;
+
+  .login-page-container {
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @include card-style;
+    padding: 30px 40px;
+
+
+    .login-form {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .error-message {
+        color: $secondary-text-color;
+        font-size: 12px;
+      }
+
+    }
+
+    .login-links {
+      width: 100%;
+      font-size: 10px;
+      text-decoration: underline;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      color: $secondary-text-color;
+
+      .signup-link {
+        margin: 5px 10px;
+      }
+
+      .password-forget-link {
+        margin: 5px 5px;
+      }
+
+    }
+
+  }
+
+}

@@ -1,0 +1,16 @@
+@mixin card-style {
+  padding: 15px;
+  background-color: white;
+  border-radius: 1px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+@mixin page-style {
+  margin: 20px 0;
+  position: absolute;
+  top: 100px;
+  left: 200px;
+  width: calc(100% - 200px);
+  height: calc(100% - 100px);
+}
+

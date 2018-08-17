@@ -1,0 +1,12 @@
+@import '../../../constants/variables';
+
+.signout-button-container {
+
+  width: 100%;
+  background: $navBackgroundAccent;
+
+  .signout-button {
+    width: 100%;
+    color: white;
+  }
+}

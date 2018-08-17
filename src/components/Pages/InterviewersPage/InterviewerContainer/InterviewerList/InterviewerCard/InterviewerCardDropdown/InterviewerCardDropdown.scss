@@ -1,0 +1,26 @@
+.interviewer-card-dialog-content {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.rdtCounters {
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.rdtCounter {
+  margin: 10px;
+}
+
+.form-control {
+  width: 100%;
+  max-width: 176px;
+}

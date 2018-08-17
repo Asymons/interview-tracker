@@ -1,0 +1,16 @@
+@import '../../../../constants/mixins';
+
+.info-card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 26px;
+  width: 160px;
+  height: 160px;
+  margin: 0 10px;
+  @include card-style;
+  background: #2196F3;
+  color: white;
+}

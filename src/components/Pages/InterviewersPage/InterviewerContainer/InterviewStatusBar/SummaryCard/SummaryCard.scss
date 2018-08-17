@@ -1,0 +1,79 @@
+@import '../../../../../../constants/mixins';
+@import '../../../../../../constants/variables';
+
+.summary-card {
+
+  display: flex;
+  @include card-style;
+  padding: 30px;
+
+  .title {
+    font-size: 20px;
+    color: $titleColor;
+    margin-right: 20px;
+  }
+
+  .summary-card-item-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border-right: 1px solid $dividerColor;
+
+    .summary-card-item {
+      display: flex;
+
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      margin: 0 30px;
+      max-width: 80px;
+      width: 100%;
+
+      .total {
+        color: $titleColor;
+        font-weight: bold;
+        font-size: 36px;
+      }
+
+      .label {
+        color: $titleColor;
+        font-size: 14px;
+      }
+
+    }
+
+  }
+}
+
+.summary-card-item-container ~ .summary-card-item-container {
+  border-right: none;
+}
+
+@media screen and (max-width: 1200px) {
+  .summary-card-item-container.four {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .summary-card-item-container.three {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .summary-card-item-container.two {
+    display: none;
+  }
+  .summary-card-item-container.one {
+    border: none;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .summary-card {
+    width: 280px;
+  }
+
+}

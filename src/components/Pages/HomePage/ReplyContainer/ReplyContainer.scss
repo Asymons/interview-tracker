@@ -1,0 +1,11 @@
+@import '../../../../constants/mixins';
+
+.reply-container {
+  margin-bottom: 20px;
+  max-width: 400px;
+  width: 100%;
+  font-size: 30px;
+  @include card-style;
+  background: #2196F3;
+  color: white;
+}

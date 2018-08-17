@@ -1,0 +1,16 @@
+@import '../../../constants/mixins';
+
+.interviewers-page {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  @include page-style;
+}
+
+@media screen and (max-width: 800px) {
+  .interviewers-page {
+    width: 100%;
+    left: 0;
+  }
+}

@@ -1,0 +1,61 @@
+@import '../../../../constants/variables';
+
+.interviewers-container {
+  width: 100%;
+
+  .interview-list-title {
+    color: $titleColor;
+    font-size: 20px;
+  }
+
+  .content-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+
+    .left-elements {
+      height: calc(100vh - 120px);
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      margin: 0 20px;
+      padding: 0 20px;
+    }
+
+    .left-elements::-webkit-scrollbar {
+      width: 0.5em;
+      background-color: transparent;
+    }
+
+    .left-elements::-webkit-scrollbar-thumb {
+      background-color: darkgrey;
+      outline: 1px solid slategrey;
+      border-radius: 10px;
+    }
+
+    .right-elements {
+      width: 350px;
+      margin: 0 20px;
+      right: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .interviewers-container {
+    align-items: center;
+  }
+
+  .right-elements {
+    display: none;
+  }
+  .interview-list-title {
+    width: 100%;
+    text-align: center;
+  }
+
+}

@@ -1,0 +1,15 @@
+.reply-card{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+
+  .material-icons{
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin-right: 20px;
+  }
+
+}

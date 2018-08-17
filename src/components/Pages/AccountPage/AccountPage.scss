@@ -1,0 +1,30 @@
+@import '../../../constants/mixins';
+
+.account-page{
+  @include page-style;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+  .page-content {
+    @include card-style;
+    max-width: 720px;
+    width: 100%;
+    margin: 0 20px;
+
+    .page-content-forms {
+      display: flex;
+      flex-direction: column;
+
+    }
+  }
+
+}
+
+@media screen and (max-width: 800px) {
+  .account-page {
+    margin: 10px 0 0 0;
+    left: 0;
+    width: 100%;
+  }
+}

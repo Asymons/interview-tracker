@@ -1,0 +1,16 @@
+.company-notes {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px 0;
+
+  .company-notes-content {
+    width: 100%;
+    .company-notes-input-field {
+      width: 100%;
+    }
+  }
+
+}

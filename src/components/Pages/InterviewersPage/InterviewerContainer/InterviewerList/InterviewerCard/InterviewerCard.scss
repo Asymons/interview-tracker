@@ -1,0 +1,102 @@
+@import '../../../../../../constants/mixins';
+@import '../../../../../../constants/variables';
+
+.interviewer-card {
+  width: 310px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  @include card-style;
+  padding: 0 15px 15px 15px;
+
+  .interviewer-card-header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    .application-status {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .application-status-desc {
+        color: $descColor;
+        font-size: 10px;
+        margin-left: 5px;
+        font-weight: bold;
+        text-transform: capitalize;
+      }
+
+    }
+
+    .options {
+
+    }
+
+  }
+
+  .interviewer-card-link {
+    width: 100%;
+
+    .interviewer-card-details {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+  }
+
+  .interviewer-card-contact {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .contact-item {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+
+      .material-icons.contact-icon {
+        margin: 5px 10px;
+      }
+
+      .fab.fa-linkedin {
+        margin: 5px 10px;
+      }
+
+    }
+  }
+
+  .material-icons.options {
+    padding: 10px;
+    cursor: pointer;
+  }
+
+  .company-name {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 5px 0;
+    color: $titleColor;
+  }
+
+  .recruiter-name {
+    font-size: 16px;
+    color: $recruiterNameColor;
+    margin: 5px 0;
+  }
+
+  .recruiter-role {
+    font-size: 12px;
+    color: $descColor;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+
+}

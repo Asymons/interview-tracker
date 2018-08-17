@@ -1,0 +1,13 @@
+@import '../../../../constants/mixins';
+
+.company-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 720px;
+  width: 100%;
+  padding: 20px;
+  margin: 20px;
+  @include card-style;
+}

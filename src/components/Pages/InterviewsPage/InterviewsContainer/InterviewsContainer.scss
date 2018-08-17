@@ -1,0 +1,20 @@
+@import '../../../../constants/mixins';
+
+.interviews-container {
+  @include page-style;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+  .left-elements-container {
+    width: 800px;
+    margin: 0 20px;
+
+  }
+
+  .right-elements-container {
+    margin: 0 20px;
+    @include card-style;
+
+  }
+}

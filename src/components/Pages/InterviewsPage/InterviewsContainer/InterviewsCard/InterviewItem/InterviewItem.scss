@@ -1,0 +1,80 @@
+@import '../../../../../../constants/mixins';
+@import '../../../../../../constants/variables';
+
+.interview-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @include card-style;
+  margin: 10px;
+  width: 100%;
+  max-width: 350px;
+  padding: 0;
+
+  .interview-item-container {
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 0 10px 0;
+
+    .interview-card-link {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+
+        .company-image {
+          margin: 5px 0;
+        }
+
+        .company-name {
+          color: $descColor;
+          font-size: 14px;
+        }
+
+        .interviewer-name {
+          color: $titleColor;
+          font-size: 14px;
+          margin-bottom: 10px;
+        }
+
+        .interview-date-time {
+          width: 100%;
+          color: $recruiterNameColor;
+          font-size: 18px;
+
+        }
+
+        .interview-location {
+          color: $recruiterNameColor;
+          font-weight: bold;
+          font-size: 16px;
+        }
+
+    }
+
+    .options-header {
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+
+      .material-icons.options {
+        margin: 5px;
+        cursor: pointer;
+      }
+    }
+
+
+  }
+
+  .material-icons.more {
+    cursor: pointer;
+  }
+}
+
