@@ -14,6 +14,9 @@ Interview tracker is a website designed to replace using spreadsheets for tracki
 - Import recruiters from a csv from a spreadsheet
 
 ## Screenshots
+#### Home Page
 ![home page](https://i.gyazo.com/99a862eebb63bda8f4f5005dbfde9d28.png)
+#### Interviews Page
 ![interviews page](https://i.gyazo.com/1c2112a642718055d90e8464139ee676.png)
+#### Company Page
 ![company page](https://i.gyazo.com/ca151060ec6c705a05ff973e1568bad2.png)
